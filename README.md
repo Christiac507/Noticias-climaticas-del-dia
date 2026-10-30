@@ -125,7 +125,7 @@ La página se generó con IA usando el prompt de la Actividad 3. Es un solo arch
 
 ## 6. Prueba de los 6 temas
 
-Se probaron los 6 temas desde la página publicada en GitHub Pages. Todos respondieron con el formato pedido, en **9 a 14 segundos**.
+Primero se probaron los 6 temas durante la construcción (11:24 h) y después **desde la página publicada en GitHub Pages** (13:26 h). Todos respondieron en **10 a 18 segundos**. Las capturas son de la página publicada.
 
 ![Buscando y resumiendo noticias](imagenes/03_buscando_noticias.png)
 
@@ -140,12 +140,23 @@ Se probaron los 6 temas desde la página publicada en GitHub Pages. Todos respon
 
 | Tema | De qué trató el resumen | ¿Qué puedo hacer yo? (IA) |
 |------|-------------------------|---------------------------|
-| cambio climático | Leyes en el Senado, muertes por calor y efectos en la salud y la economía (chocolate y El Niño). | Proponer en el campus ahorro de energía y reducción de residuos. |
-| huracanes Pacífico mexicano | La tormenta Vance y su trayectoria hacia Sinaloa, y la rápida intensificación de huracanes en el Pacífico. | Difundir las recomendaciones de Protección Civil y tener un plan de emergencia. |
-| deforestación México | Los 85.3 millones de dólares del Fondo Verde para el Clima y las 178,000 ha deforestadas al año. | Proponer un proyecto de reforestación cerca del campus. |
-| reciclaje | Proyectos universitarios, programas oficiales y el intercambio de basura por pasajes ("Recarga Verde"). | Organizar una campaña de reciclaje en la escuela. |
-| energías renovables México | La meta de 38 % de energía limpia para 2030 y nuevos proyectos renovables en evaluación. | Crear un club de energías renovables en el campus. |
-| sequía Sinaloa | Suspensión del suministro de agua, reparto de agua potable y programas contra la sequía. | Campaña de ahorro de agua y detección de fugas en el campus. |
+| cambio climático | Salud pública, ciudades, economía y el papel de los jóvenes; muertes por calor y el chocolate en Día de Muertos. | Participar en un proyecto de sensibilización climática en el campus. |
+| huracanes Pacífico mexicano | La tormenta Vance y su trayectoria, la rápida intensificación de huracanes y la posible formación de Winnie. | Hacer un simulacro o un plan de acción ante huracanes con la familia. |
+| deforestación México | Los 85.3 millones de dólares del Fondo Verde para el Clima y las 178,000 ha deforestadas al año. | Ser voluntario en un programa de reforestación. |
+| reciclaje | Proyectos universitarios, programas oficiales, el intercambio de basura por pasajes ("Recarga Verde") y reciclaje en minería y hostelería. | Participar en un programa de reciclaje del campus o la comunidad. |
+| energías renovables México | La meta de 38 % de energía limpia para 2030, inversiones y proyectos en evaluación ambiental. | Evaluar el consumo de energía del campus y proponer medidas de eficiencia. |
+| sequía Sinaloa | Suspensión del suministro de agua, reparto de agua potable en 16 municipios y programas contra la sequía. | Ahorrar agua en casa y en el campus y reportar fugas. |
+
+### Errores de formato de la IA
+
+Aunque las instrucciones pedían un formato fijo, en la prueba desde la página publicada la IA cometió varios errores:
+
+- En **4 de los 6 temas agregó una "noticia 6"**, aunque el RSS solo trae 5. En *huracanes* repitió una nota y en *reciclaje* escribió "[Sin título específico adicional en la lista]". En *sequía Sinaloa* puso "(Se puede considerar como referencia adicional)" y en *cambio climático* "Current date – noticia adicional: ENLACE". Esto rompe la regla de **no agregar noticias que no estén en la lista**.
+- En *cambio climático* copió literalmente el texto de la plantilla, **"1 línea explicando por qué importa"**, en lugar de explicarlo.
+- En *deforestación* puso el enlace en la misma línea que la explicación. Por eso la página no lo convirtió en enlace, porque solo convierte las líneas que **empiezan** con `http`.
+- En *reciclaje* dejó un pedazo de enlace suelto después de la noticia 4.
+
+En la primera prueba de la mañana estos errores casi no aparecieron. La misma IA con las mismas instrucciones no siempre responde igual.
 
 ## 7. Verificación de la IA contra las fuentes
 
@@ -161,11 +172,11 @@ De 3 temas distintos se abrió una noticia original y se comparó con lo que dij
 - En la sequía la IA **exageró**: 26 % no es "gran parte", y cambió el sentido de una nota que habla de mejora.
 - En la deforestación fue fiel, pero **no dio las cifras**; solo dijo que la nota "aporta una cifra". Además, 3 de las 5 noticias eran la misma (los 85.3 millones de dólares) publicada por distintos medios.
 - Varias noticias **no eran del día**: la de la sequía era de julio y la de la deforestación de agosto. Google News ordena el RSS por relevancia, no por fecha, y la IA las presentó como "noticias recientes".
-- En *cambio climático*, un enlace salió cortado al final, así que puede no abrir.
+- En la segunda prueba (desde la página publicada) la IA describió mejor la sequía: "a pesar de mejoras, una parte significativa continúa bajo sequía". La misma noticia puede resumirse bien o mal según la ejecución.
 
 ### Créditos
 
-Según el historial del escenario, cada consulta consume **5 operaciones** y entre **5.78 y 5.93 créditos**, unos **5.8 por tema**. Tarda de 9 a 13 segundos. La primera prueba con **Run once** gastó 6.28 créditos.
+Según el historial del escenario, cada consulta consume **5 operaciones** y entre **5.78 y 6.38 créditos**, unos **5.9 por tema**. Tarda de 9 a 18 segundos. La primera prueba con **Run once** gastó 6.28 créditos. En total, las 12 consultas más la prueba con Run once gastaron unos 77 créditos.
 
 ![Historial del escenario con los créditos por consulta](imagenes/10_historial_creditos.png)
 
@@ -175,7 +186,7 @@ Según el historial del escenario, cada consulta consume **5 operaciones** y ent
 **Reciclaje** tuvo más noticias en la semana (90), seguido de **cambio climático** (82). Los que menos tuvieron fueron **sequía Sinaloa** (3) y **deforestación México** (6). Otros temas como *olas de calor México*, *desertificación* o *manglares Sinaloa* no tuvieron ninguna. Los medios cubren más los temas generales y los que tienen una noticia del momento, como un premio, una ley o una tormenta. Los problemas lentos y locales, como la sequía o la pérdida de bosques y manglares, casi no aparecen, aunque nos afectan todos los días. La atención de los medios no depende de qué tan grave es un problema, sino de qué tan "noticia" es ese día.
 
 **2. ¿Los resúmenes de la IA fueron fieles a las noticias originales? ¿Qué riesgos tiene difundir información resumida por IA sin verificarla?**
-**En su mayoría sí**: de 3 noticias verificadas, una fue fiel, otra fiel pero vaga y otra **exagerada**: dijo que "gran parte" de Sinaloa sigue seca cuando la fuente dice 26 % y habla de una mejora. Además, presentó como recientes noticias de hace meses. El riesgo es difundir datos exagerados o viejos como si fueran de hoy. Eso puede causar alarma o desconfianza, y al compartirse sin revisar el error se multiplica. Por eso la página muestra los enlaces a las fuentes: el resumen sirve para orientar, pero hay que leer la nota original antes de compartir un dato.
+**En su mayoría sí**: de 3 noticias verificadas, una fue fiel, otra fiel pero vaga y otra **exagerada**: dijo que "gran parte" de Sinaloa sigue seca cuando la fuente dice 26 % y habla de una mejora. Además, presentó como recientes noticias de hace meses y, en la página publicada, **inventó una sexta "noticia"** en 4 de los 6 temas. El riesgo es difundir datos exagerados o viejos como si fueran de hoy. Eso puede causar alarma o desconfianza, y al compartirse sin revisar el error se multiplica. Por eso la página muestra los enlaces a las fuentes: el resumen sirve para orientar, pero hay que leer la nota original antes de compartir un dato.
 
 **3. ¿Qué tan presentes estuvieron los temas locales (Sinaloa, Mazatlán) frente a los nacionales o globales?**
 Muy poco. De los temas locales del catálogo, *sequía Sinaloa* tuvo 3 noticias en la semana, *Mazatlán medio ambiente* 2, *pesca sustentable Sinaloa* 1 y *manglares Sinaloa* ninguna. En cambio, los temas nacionales o globales tuvieron decenas. Lo local apareció sobre todo por algo urgente, como la tormenta Vance acercándose a Sinaloa dentro del tema de huracanes. Esto muestra que la información ambiental de nuestra región depende de pocos medios locales, como Noroeste, y que una herramienta así ayuda a encontrarla.
@@ -200,7 +211,7 @@ Muy poco. De los temas locales del catálogo, *sequía Sinaloa* tuvo 3 noticias 
 
 ## 10. Conclusión
 
-Con Make, un feed RSS y un agente de IA se construyó, sin programar el flujo, una página que resume las noticias ambientales del día en unos 10 segundos y con unos 5.8 créditos por consulta. El **Text aggregator** fue clave para que la IA trabajara una sola vez por tema. La práctica también mostró los límites de la IA: casi siempre resumió bien, pero exageró un dato de la sequía en Sinaloa y presentó noticias viejas como recientes. Un ingeniero en sistemas puede ayudar a su comunidad haciendo accesible la información ambiental, siempre que la herramienta muestre las fuentes y la información se verifique antes de difundirla.
+Con Make, un feed RSS y un agente de IA se construyó, sin programar el flujo, una página que resume las noticias ambientales del día en unos 12 segundos y con unos 5.9 créditos por consulta. El **Text aggregator** fue clave para que la IA trabajara una sola vez por tema. La práctica también mostró los límites de la IA: casi siempre resumió bien, pero exageró un dato de la sequía en Sinaloa, presentó noticias viejas como recientes y a veces agregó noticias que no existían o rompió el formato. Un ingeniero en sistemas puede ayudar a su comunidad haciendo accesible la información ambiental, siempre que la herramienta muestre las fuentes y la información se verifique antes de difundirla.
 
 ## 11. Fuentes
 
