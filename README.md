@@ -8,7 +8,7 @@
 
 ---
 
-🎥 **Video de la prueba en vivo:** [▶️ Ver video en YouTube](ENLACE_YOUTUBE)
+🎥 **Video de la prueba en vivo:** [▶️ Ver video en YouTube](https://youtube.com/shorts/RtBA7ewQulE)
 
 🌐 **Página publicada:** [christiac507.github.io/Noticias-climaticas-del-dia](https://christiac507.github.io/Noticias-climaticas-del-dia/)
 
@@ -124,6 +124,8 @@ La página se generó con IA usando el prompt de la Actividad 3. Es un solo arch
 ![Página sin consultar](imagenes/02_pagina_vacia.png)
 
 ## 6. Prueba de los 6 temas
+
+**Video de la prueba en vivo:** [▶️ Ver video en YouTube](https://youtube.com/shorts/RtBA7ewQulE)
 
 Primero se probaron los 6 temas durante la construcción (11:24 h) y después **desde la página publicada en GitHub Pages** (13:26 h). Todos respondieron en **10 a 18 segundos**. Las capturas son de la página publicada.
 
